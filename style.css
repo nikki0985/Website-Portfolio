@@ -1,0 +1,387 @@
+ *
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Poppins';
+    scroll-behavior: smooth;
+ }
+ body
+ {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(#030637, #81689D);
+ }
+ header
+ {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 30px 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 10000;
+ }
+ header .logo
+ {
+   color: #FFD0EC;
+   font-weight: 700;
+   text-decoration: none;
+   font-size: 2em;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+ }
+ header ul
+ {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ header ul li
+ {
+   list-style: none;
+   margin-left: 20px;
+ }
+ header ul li a
+ {
+   text-decoration: none;
+   padding: 6px 15px;
+   color: #FFD0EC;
+   border-radius: 20px;
+ }
+ header ul li a:hover,
+ header ul li a.active
+ {
+   background:#FFD0EC ;
+   color: #1F2544;
+ }
+section
+{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   padding: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+section::before
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height: 100px;
+  background: linear-gradient(to top,#1c0522,transparent);
+  z-index: 1000;
+}
+section img
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   pointer-events: none;
+}
+section img#moon
+{
+   mix-blend-mode: screen;
+}
+section img#mountain_front
+{
+  z-index: 10;
+}
+#text
+{
+ position: absolute;  
+ color: #fff;
+ white-space: nowrap;
+ font-size: 7.5vw;
+ z-index: 9;
+}
+#btn
+{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #FFD0EC;
+  color: #1F2544;
+  font-size: 1.5em;
+  z-index: 9;
+  transform: translateY(100px);
+}
+.sec
+{
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+}
+.sec h2
+{
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #FFD0EC;
+}
+.img_prf
+{
+  width: 200x;
+  height: 200px;
+  border-radius: 50px;
+  float: left;
+}
+.sec p
+{
+  font-size: 1em;
+  color: #FFD0EC;
+}
+.conatainer
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #030637;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.item
+{
+  width: 100%;
+  height: 550px;
+  max-width: 820px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 10px rgba(0,0,0,.4);
+  overflow: hidden;
+  grid-template-columns: repeat(2, lfr);
+  display: grid;
+  z-index: 1000;
+}
+.first-text
+{
+  padding-top: 50px;
+  font-size: 35px;
+  color: purple;
+  text-align: center;
+}
+#contact
+{
+  width: 100%;
+  height:100%;
+  border-radius: 0%;
+}
+.img_prf
+{
+  margin-top: 10px;
+}
+/* Apply css properties to h1 element */
+h1 {
+  text-align: center;
+}
+
+/* Create a container using CSS properties */
+.container {
+  top: 30%;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+/* Apply CSS properties to ui-widgets class */
+.ui-widgets {
+  position: relative;
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 9rem;
+  margin: 1.5rem;
+  border: 1.2rem solid palegreen;
+  box-shadow: inset 0 0 7px grey;
+  border-left-color: purple;
+  border-top-color: purple;
+  border-right-color: violet;
+  border-bottom-color: white;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Apply css properties to the second 
+  child of ui-widgets class */
+.ui-widgets:nth-child(2) {
+  border-top-color: pink;
+  border-right-color: pink;
+  border-left-color: pink;
+  border-bottom-color: white;
+}
+
+/* Apply css properties to ui-widgets class 
+  and ui-values class*/
+.ui-widgets .ui-values {
+  top: 40px;
+  position: absolute;
+  left: 10px;
+  right: 0;
+  font-weight: 700;
+  font-size: 2.0rem;
+
+}
+
+/* Apply css properties to ui-widgets 
+  class and ui-labels class*/
+.ui-widgets .ui-labels {
+
+  left: 0;
+  bottom: -16px;
+  text-shadow: 0 0 4px grey;
+  color: black;
+  position: absolute;
+  width: 100%;
+  font-size: 16px;
+}
+.progress
+{
+  position: absolute;
+}
+.sticker
+{
+  width: 500px;
+  height: 500px;
+  float: right;
+}
+.contact
+{
+  color: white;
+  min-height:100vh;
+  padding: 50px;
+  text-align: center;
+}
+.container
+{
+max-width: 800px;
+margin: 0 auto;
+}
+.container h2
+{
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: palevioletred;
+}
+.contact-wrapper
+{
+  display: grid;
+  grid-template-columns: repeat(2,lfr);
+  grid-gap: 30px
+}
+.contact-form
+{
+  text-align: left;
+}
+.contact-form h3
+{
+font-size: 24px;
+margin-bottom: 20px;
+color: palevioletred;
+}
+.form-group
+{
+  margin-bottom: 20px;
+}
+input, textarea
+{
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: lightgray;
+  color: navy;
+}
+input:focus,
+textarea:focus{
+  outline: none;
+  box-shadow: 0 0 8px #bbb;
+}
+button
+{
+display: inline-block;
+padding:12px 24px;
+background-color: #4caf50;
+color:white;
+border: none;
+cursor: pointer;
+transition: 0.3s ease;
+}
+button:hover{
+background-color: aqua;
+}
+.contact-info
+{
+  text-align: left;
+}
+.contact-info h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #FFD0EC;
+}
+.contact-info p{
+  margin-bottom: 10px;
+  color:white;
+}
+.contact-info i{
+  color:#4caf50;
+  margin-right: 10px;
+}
+@media screen and (max-width: 768px){
+  .container{
+    padding:20px;
+  }
+  .contact-wrapper
+{
+  grid-template-columns: lfr;
+}
+}
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.card{
+  width: 325px;
+  background-color:#f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px  rgba(0,0,0,0,2);
+  margin: 20px;
+}
+.card img{
+  width: 100%;
+  height: auto;
+}
+.card-content{
+  padding: 16px;
+}
+.card-content h3{
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.card-content p{
+  color:#030637;
+  font-size: 15px;
+  line-height: 1.3;
+}
+.card-content .btn2{
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: white;
+}

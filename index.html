@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Watashi </title>
+        <link rel="stylesheet"; type="text/css"; href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Nicole P.</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Contacts.html">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mntsbhnd">
+            <h1 id="text"> Watashi</h1>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="mountains_front.png" id="mntsfrnt">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Mary Hope Nicole P. Porgalinas</h2>
+            <img class="img_prf"; src="profile.png">
+            <p> <br><br>I am Mary Hope Nicole P. Porgalinas or you can call me Nicole for short. I am currently on Grade 9 at RTPM-DSHS. This website is hand-made and from scratch.<br>
+            If ever you are reading this, please bear with my humble website for I am no professional but keep in mind that this is made with love. I hope that with this, you will get to know about my skills and works better.
+        <br> To know more, press the text/s in the bar above.</p>
+            
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+
+            let header = document.querySelector('header');
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
